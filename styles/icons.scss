@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'swv_icons';
+	src:url('../fonts/swv_icons.eot?-x5j5js');
+	src:url('../fonts/swv_icons.eot?#iefix-x5j5js') format('embedded-opentype'),
+		url('../fonts/swv_icons.woff?-x5j5js') format('woff'),
+		url('../fonts/swv_icons.ttf?-x5j5js') format('truetype'),
+		url('../fonts/swv_icons.svg?-x5j5js#swv_icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'swv_icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+	content: "\e600";
+}
+.icon-SWV:before {
+	content: "\e601";
+}
+.icon-twitter:before {
+	content: "\e602";
+}
+.icon-calendar:before {
+	content: "\e603";
+}
+.icon-drink:before {
+	content: "\e604";
+}
+.icon-icecream:before {
+	content: "\e605";
+}
+.icon-tie:before {
+	content: "\e606";
+}
+.icon-grid:before {
+	content: "\e607";
+}
+.icon-bookmark:before {
+	content: "\e608";
+}
+.icon-paperplane:before {
+	content: "\e609";
+}

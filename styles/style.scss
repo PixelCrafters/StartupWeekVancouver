@@ -1,0 +1,347 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$frank: "franklin-gothic-ext-comp-urw";
+$adelle: 'adelle';
+$mano: 'wc_mano_negra_btaregular';
+
+
+@mixin h1 {
+  font-family: $mano;
+  color: #9bdab7;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 105.6px;
+  font-size: 100px;
+  letter-spacing: 0;
+}
+
+@mixin h2 {
+  font-family: $frank;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 57.6-px;
+  letter-spacing: 0.14em;
+}
+
+@mixin h3 {
+  font-family: $mano;
+  font-size: 40px;
+  color: #58585b;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: 0;
+}
+
+@mixin h4 {
+  font-family: $frank;
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 31.2px;
+  letter-spacing: 0.08em;
+}
+
+@mixin h5 {
+  font-family: $mano;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 33.6px;
+  letter-spacing: 0;
+}
+
+@mixin h6 {
+  font-family: $adelle;
+  font-size: 22px;
+  line-height: 31.6px;
+}
+
+@mixin body {
+  font-family: $adelle;
+  font-size: 16px;
+  color: #999999;
+  line-height: 26px;
+  font-weight: 100;
+}
+
+@mixin stroke {
+  background-image: url('../images/stroke.png');
+  background-size: 186px 46px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+$lightGrey: #f2f2f2;
+$grey: #cccccc;
+$darkGrey: #58585b;
+
+$green: #9bdab7;
+$orange: #ff9684;
+$red: #ff9684;
+$yellow: #dfd85f;
+
+h1 { @include h1; }
+h2 { @include h2; }
+h3 { @include h3; }
+h4 { @include h4; }
+h5 { @include h5; }
+h6 { @include h6; }
+
+body {
+  @include body();
+  margin: 0;
+}
+
+@mixin hover-darken-bg($bgColour) {
+  background-color: $bgColour;
+  @include transition (background-color 0.1s ease-in-out);
+  &:hover {
+    background-color: darken($bgColour, 10%);
+  }
+}
+
+@mixin stroke-link-header {
+  > h3 {
+    @include stroke();
+    margin-bottom: 0.5em;
+  }
+  text-align: center;
+  > a {
+    color: $orange;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.button {
+  @include h4;
+  @include hover-darken-bg($bgColour: #c86b84);
+  color: white;
+  padding: 0.5em 1em;
+}
+
+a.circle {
+  @include h4;
+  @include hover-darken-bg($bgColour: #ff9684);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  padding-top: 2rem;
+  display: inline-block;
+}
+
+.header {
+  background-image: url('../images/SWV_skyrocket_header1.1.jpg');
+  background-size: cover;
+  > div {
+    @include outer-container();
+
+    h1 {
+      @include transform(rotate(-3deg));
+      margin: 0;
+      padding-top: 14rem;
+    }
+    h2,p {
+      color: white;
+    }
+    .intro-row {
+      @include row();
+      padding: 2rem 0;
+      h2 {
+        @include shift(2);
+        @include span-columns(4);
+      }
+      p {
+        @include span-columns(4);
+      }
+    }
+    .button-row {
+      text-align: center;
+      padding-bottom: 10rem;
+    }
+  }
+}
+
+.featured-events {
+  @include stroke-link-header();
+  ul {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+      &:nth-child(1) {
+        .head {
+          border-bottom: 10px solid $orange;
+        }
+        .content {
+          background-image: url('../images/event-images_impact.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      &:nth-child(2) {
+        .head {
+          border-bottom: 10px solid $green;
+        }
+        .content {
+          background-image: url('../images/event-images_sky.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      &:nth-child(3) {
+        .head {
+          border-bottom: 10px solid $yellow;
+        }
+        .content {
+          background-image: url('../images/event-images_casc.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      .head,.content {
+        .row {
+          @include outer-container();
+          @include row();
+        }
+      }
+
+      .head {
+        @include transition(all 0.3s);
+        background-color: $lightGrey;
+        height: 110px;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+        }
+        h2, h5 {
+          margin: 0;
+          line-height: 110px;
+        }
+        h2 {
+          color: black;
+          @include span-columns(8);
+        }
+        h5 {
+          @include span-columns(4)
+        }
+      }
+      .content {
+        padding: 6rem 0;
+        border-bottom: 10px solid $red;
+        box-sizing: border-box;
+
+        h5 {
+          margin-bottom: 0;
+        }
+        h5 + .sub {
+          margin-top: 0;
+        }
+
+        h2,h5,p {
+          color: white;
+        }
+        p {
+          text-align: left;
+        }
+
+        .left {
+          @include span-columns(8);
+        }
+        .right {
+          @include span-columns(4);
+        }
+
+      }
+    }
+    li.active {
+      .content {
+        display: block;
+      }
+    }
+    li:not(.active) {
+      .content {
+        display: none;
+      }
+    }
+  }
+
+}
+.sponsors {
+  @include stroke-link-header();
+  .row {
+    @include outer-container();
+    @include row();
+    .left {
+      @include span-columns(2);
+      img {
+        width: 100%;
+      }
+    }
+    .right {
+      text-align: center;
+      @include span-columns(10);
+      a {
+        img {
+          width: 300px;
+          max-width: 33%;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+.startup-jobs {
+  h3 {
+    @include stroke();
+    color: white;
+    margin: 0;
+    padding: 2rem;
+  }
+  background-image: url('../images/SWV_skyrocket_guys.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+.feed-me {
+  padding: 0;
+  position: relative;
+  img {
+    width: 100%;
+    opacity: 1;
+    @include transition(all 0.2s);
+  }
+  img.hover {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    z-index: 1;
+  }
+  &:hover {
+    img.hover {
+      opacity: 1;
+    }
+  }
+}
+.contact {
+  padding: 0;
+  img {
+    width: 100%;
+  }
+}
+.why {
+
+}
+
+
+section {
+  padding: 2rem 0 0 0;
+}
