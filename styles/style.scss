@@ -140,6 +140,7 @@ a.circle {
 .header {
   background-image: url('../images/SWV_skyrocket_header1.1.jpg');
   background-size: cover;
+  background-position: center;
   > div {
     @include outer-container();
 
@@ -262,11 +263,11 @@ a.circle {
       }
     }
     li.active {
-      .content {
-        display: block;
+      .head {
+        background-color: white;
       }
     }
-    li:not(.active) {
+    li {
       .content {
         display: none;
       }
@@ -299,6 +300,7 @@ a.circle {
   }
 }
 .startup-jobs {
+  padding-bottom: 4rem;
   h3 {
     @include stroke();
     color: white;
@@ -308,7 +310,15 @@ a.circle {
   background-image: url('../images/SWV_skyrocket_guys.jpg');
   background-size: cover;
   background-position: center;
-
+  .row {
+    @include row();
+    @include outer-container();
+    p {
+      color: white;
+      @include shift(2);
+      @include span-columns(8);
+    }
+  }
 }
 .feed-me {
   padding: 0;
@@ -338,7 +348,37 @@ a.circle {
   }
 }
 .why {
-
+  padding: 14rem 0 4rem 0;
+  background-image: url('../images/SWV_skyrocket_girl.jpg');
+  background-size: cover;
+  background-position: center;
+  .row {
+    @include row();
+    @include outer-container();
+    text-align: center;
+    h1 {
+      color: $orange;
+      @include transform(rotate(-3deg));
+      margin: 0;
+    }
+    div, p {
+      @include shift(3);
+      @include span-columns(6);
+    }
+    p {
+      font-size: 22px;
+      text-align: left;
+      padding: 2rem 0 8rem 0;
+    }
+    i {
+      font-size: 52px;
+    }
+    small {
+      font-size: 14px;
+      color: #f2f2f2;
+    }
+    color: white;
+  }
 }
 
 
