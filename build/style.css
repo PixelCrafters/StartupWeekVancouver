@@ -1,0 +1,412 @@
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+h1 {
+  font-family: "wc_mano_negra_btaregular";
+  color: #9bdab7;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 105.6px;
+  font-size: 100px;
+  letter-spacing: 0; }
+
+h2 {
+  font-family: "franklin-gothic-ext-comp-urw";
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 57.6-px;
+  letter-spacing: 0.14em; }
+
+h3 {
+  font-family: "wc_mano_negra_btaregular";
+  font-size: 40px;
+  color: #58585b;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: 0; }
+
+h4 {
+  font-family: "franklin-gothic-ext-comp-urw";
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 31.2px;
+  letter-spacing: 0.08em; }
+
+h5 {
+  font-family: "wc_mano_negra_btaregular";
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 33.6px;
+  letter-spacing: 0; }
+
+h6 {
+  font-family: "adelle";
+  font-size: 22px;
+  line-height: 31.6px; }
+
+body {
+  font-family: "adelle";
+  font-size: 16px;
+  color: #999999;
+  line-height: 26px;
+  font-weight: 100;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+a.button {
+  font-family: "franklin-gothic-ext-comp-urw";
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 31.2px;
+  letter-spacing: 0.08em;
+  background-color: #c86b84;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  color: white;
+  padding: 0.5em 1em; }
+  a.button:hover {
+    background-color: #ba4665; }
+
+a.circle {
+  font-family: "franklin-gothic-ext-comp-urw";
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 31.2px;
+  letter-spacing: 0.08em;
+  background-color: #ff9684;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  padding-top: 2rem;
+  display: inline-block; }
+  a.circle:hover {
+    background-color: #ff6a51; }
+
+.header {
+  background-image: url("../images/SWV_skyrocket_header1.1.jpg");
+  background-size: cover;
+  background-position: center; }
+  .header > div {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .header > div:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .header > div h1 {
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      -o-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      margin: 0;
+      padding-top: 14rem; }
+    .header > div h2, .header > div p {
+      color: white; }
+    .header > div .intro-row {
+      display: block;
+      padding: 2rem 0; }
+      .header > div .intro-row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .header > div .intro-row h2 {
+        margin-left: 17.05961%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .header > div .intro-row h2:last-child {
+          margin-right: 0; }
+      .header > div .intro-row p {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .header > div .intro-row p:last-child {
+          margin-right: 0; }
+    .header > div .button-row {
+      text-align: center;
+      padding-bottom: 10rem; }
+
+.featured-events {
+  text-align: center; }
+  .featured-events > h3 {
+    background-image: url("../images/stroke.png");
+    background-size: 186px 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0.5em; }
+  .featured-events > a {
+    color: #ff9684; }
+  .featured-events ul {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    list-style: none; }
+    .featured-events ul li:nth-child(1) .head {
+      border-bottom: 10px solid #ff9684; }
+    .featured-events ul li:nth-child(1) .content {
+      background-image: url("../images/event-images_impact.jpg");
+      background-size: cover;
+      background-position: center; }
+    .featured-events ul li:nth-child(2) .head {
+      border-bottom: 10px solid #9bdab7; }
+    .featured-events ul li:nth-child(2) .content {
+      background-image: url("../images/event-images_sky.jpg");
+      background-size: cover;
+      background-position: center; }
+    .featured-events ul li:nth-child(3) .head {
+      border-bottom: 10px solid #dfd85f; }
+    .featured-events ul li:nth-child(3) .content {
+      background-image: url("../images/event-images_casc.jpg");
+      background-size: cover;
+      background-position: center; }
+    .featured-events ul li .head .row, .featured-events ul li .content .row {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+      .featured-events ul li .head .row:after, .featured-events ul li .content .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .featured-events ul li .head .row:after, .featured-events ul li .content .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+    .featured-events ul li .head {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      background-color: #f2f2f2;
+      height: 110px;
+      cursor: pointer; }
+      .featured-events ul li .head:hover {
+        background-color: white; }
+      .featured-events ul li .head h2, .featured-events ul li .head h5 {
+        margin: 0;
+        line-height: 110px; }
+      .featured-events ul li .head h2 {
+        color: black;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        .featured-events ul li .head h2:last-child {
+          margin-right: 0; }
+      .featured-events ul li .head h5 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .featured-events ul li .head h5:last-child {
+          margin-right: 0; }
+    .featured-events ul li .content {
+      padding: 6rem 0;
+      border-bottom: 10px solid #ff9684;
+      box-sizing: border-box; }
+      .featured-events ul li .content h5 {
+        margin-bottom: 0; }
+      .featured-events ul li .content h5 + .sub {
+        margin-top: 0; }
+      .featured-events ul li .content h2, .featured-events ul li .content h5, .featured-events ul li .content p {
+        color: white; }
+      .featured-events ul li .content p {
+        text-align: left; }
+      .featured-events ul li .content .left {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        .featured-events ul li .content .left:last-child {
+          margin-right: 0; }
+      .featured-events ul li .content .right {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .featured-events ul li .content .right:last-child {
+          margin-right: 0; }
+    .featured-events ul li.active .head {
+      background-color: white; }
+    .featured-events ul li .content {
+      display: none; }
+
+.sponsors {
+  text-align: center; }
+  .sponsors > h3 {
+    background-image: url("../images/stroke.png");
+    background-size: 186px 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0.5em; }
+  .sponsors > a {
+    color: #ff9684; }
+  .sponsors .row {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+    .sponsors .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .sponsors .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .sponsors .row .left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+      .sponsors .row .left:last-child {
+        margin-right: 0; }
+      .sponsors .row .left img {
+        width: 100%; }
+    .sponsors .row .right {
+      text-align: center;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .sponsors .row .right:last-child {
+        margin-right: 0; }
+      .sponsors .row .right a img {
+        width: 300px;
+        max-width: 33%;
+        vertical-align: middle; }
+
+.startup-jobs {
+  padding-bottom: 4rem;
+  background-image: url("../images/SWV_skyrocket_guys.jpg");
+  background-size: cover;
+  background-position: center; }
+  .startup-jobs h3 {
+    background-image: url("../images/stroke.png");
+    background-size: 186px 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 2rem; }
+  .startup-jobs .row {
+    display: block;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .startup-jobs .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .startup-jobs .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .startup-jobs .row p {
+      color: white;
+      margin-left: 17.05961%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      .startup-jobs .row p:last-child {
+        margin-right: 0; }
+
+.feed-me {
+  padding: 0;
+  position: relative; }
+  .feed-me img {
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+  .feed-me img.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1; }
+  .feed-me:hover img.hover {
+    opacity: 1; }
+
+.contact {
+  padding: 0; }
+  .contact img {
+    width: 100%; }
+
+.why {
+  padding: 14rem 0 4rem 0;
+  background-image: url("../images/SWV_skyrocket_girl.jpg");
+  background-size: cover;
+  background-position: center; }
+  .why .row {
+    display: block;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white; }
+    .why .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .why .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .why .row h1 {
+      color: #ff9684;
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      -o-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      margin: 0; }
+    .why .row div, .why .row p {
+      margin-left: 25.58941%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .why .row div:last-child, .why .row p:last-child {
+        margin-right: 0; }
+    .why .row p {
+      font-size: 22px;
+      text-align: left;
+      padding: 2rem 0 8rem 0; }
+    .why .row i {
+      font-size: 52px; }
+    .why .row small {
+      font-size: 14px;
+      color: #f2f2f2; }
+
+section {
+  padding: 2rem 0 0 0; }
+
+/*# sourceMappingURL=style.css.map */
