@@ -229,6 +229,10 @@ a.circle {
       padding: 6rem 0;
       border-bottom: 10px solid #ff9684;
       box-sizing: border-box; }
+      .featured-events ul li .content h5:first-child {
+        margin-top: 0; }
+      .featured-events ul li .content h2:first-child {
+        margin-top: 0; }
       .featured-events ul li .content h5 {
         margin-bottom: 0; }
       .featured-events ul li .content h5 + .sub {

@@ -239,6 +239,13 @@ a.circle {
         border-bottom: 10px solid $red;
         box-sizing: border-box;
 
+        h5:first-child {
+          margin-top: 0;
+        }
+        h2:first-child {
+          margin-top: 0;
+        }
+
         h5 {
           margin-bottom: 0;
         }
