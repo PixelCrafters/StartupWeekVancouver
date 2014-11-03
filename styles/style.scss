@@ -148,6 +148,10 @@ a.button {
   @include hover-darken-bg($bgColour: $red);
   color: white;
   padding: 0.5em 1em;
+  vertical-align: top;
+  i {
+    font-size: 2rem;
+  }
 }
 
 a.circle {
@@ -171,7 +175,7 @@ a.circle {
   position: relative;
 
   @include media($large-up) {
-    padding: 2rem $edge-padding 0 1rem;
+    padding: 2rem $edge-padding 0 $edge-padding;
   }
 
   img {
@@ -672,7 +676,7 @@ ul.menu {
     padding: 8rem 1rem 4rem 1rem;
   }
   @include media($large-up) {
-    padding: 14rem 1rem 4rem 1rem;
+    padding: 14rem 1rem 4rem $edge-padding;
   }
   background-image: url('../images/SWV_skyrocket_girl.jpg');
   background-size: cover;
