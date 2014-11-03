@@ -1,0 +1,7 @@
+This is the master branch. It is empty.
+
+git checkout gh-pages
+
+To switch to the branch that produces www.startupweekvancouver.ca.
+
+See https://github.com/PixelCrafters/StartupWeekVancouver for more info.
