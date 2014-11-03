@@ -68,7 +68,6 @@ $mano: 'wc_mano_negra_btaregular';
   font-family: $adelle;
   font-size: 16px;
   color: #999999;
-  line-height: 26px;
   font-weight: 100;
 }
 
@@ -153,6 +152,7 @@ a.circle {
   background-image: url('../images/SWV_skyrocket_header1.1.jpg');
   background-size: cover;
   background-position: center;
+  padding: 2rem 1rem 0 1rem;
   > div {
     @include outer-container();
 
@@ -240,7 +240,8 @@ a.circle {
           background-position: center;
         }
       }
-      .head,.content {
+
+      .content {
         .row {
           @include outer-container();
           @include row();
@@ -248,27 +249,58 @@ a.circle {
       }
 
       .head {
+        .row {
+          @include outer-container();
+          @include row();
+        }
+        h2 {
+          @include media($large-up) {
+              @include span-columns(8);
+          }
+        }
+        h5 {
+          @include media($large-up) {
+              @include span-columns(4);
+              line-height: 60px;
+          }
+        }
+      }
+
+      .head, .content {
+        padding: 0 1rem;
+      }
+
+      .head {
         @include transition(all 0.3s);
         background-color: $lightGrey;
-        height: 110px;
         cursor: pointer;
         &:hover {
           background-color: white;
         }
         h2, h5 {
           margin: 0;
-          line-height: 110px;
+        }
+        h2 {
+          padding: 0.8rem 0;
+          @include media($large-up) {
+              padding: 2.5rem 0;
+          }
+        }
+        h5 {
+          padding: 0 0 0.8rem 0;
+          @include media($large-up) {
+              padding: 2.5rem 0;
+          }
         }
         h2 {
           color: black;
-          @include span-columns(8);
-        }
-        h5 {
-          @include span-columns(4)
         }
       }
       .content {
-        padding: 6rem 0;
+        padding: 3rem 1rem;
+        @include media($large-up) {
+          padding: 6rem 1rem;
+        }
         border-bottom: 10px solid $red;
         box-sizing: border-box;
 
@@ -294,11 +326,21 @@ a.circle {
         }
 
         .left {
-          @include span-columns(8);
+          margin-bottom: 2.5rem;
+          @include media($large-up) {
+            margin-bottom: 0;
+          }
         }
-        .right {
-          @include span-columns(4);
+
+        @include media($large-up) {
+          .left {
+            @include span-columns(8);
+          }
+          .right {
+            @include span-columns(4);
+          }
         }
+
 
       }
     }
@@ -454,5 +496,5 @@ a.circle {
 
 
 section {
-  padding: 2rem 1rem 0 1rem;
+  padding: 2rem 0 0 0;
 }

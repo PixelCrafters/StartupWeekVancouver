@@ -66,7 +66,6 @@ body {
   font-family: "adelle";
   font-size: 16px;
   color: #999999;
-  line-height: 26px;
   font-weight: 100;
   margin: 0; }
 
@@ -112,7 +111,8 @@ a.circle {
 .header {
   background-image: url("../images/SWV_skyrocket_header1.1.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  padding: 2rem 1rem 0 1rem; }
   .header > div {
     max-width: 68em;
     margin-left: auto;
@@ -207,50 +207,80 @@ a.circle {
       background-image: url("../images/event-images_casc.jpg");
       background-size: cover;
       background-position: center; }
-    .featured-events ul li .head .row, .featured-events ul li .content .row {
+    .featured-events ul li .content .row {
       max-width: 68em;
       margin-left: auto;
       margin-right: auto;
       display: block; }
-      .featured-events ul li .head .row:after, .featured-events ul li .content .row:after {
+      .featured-events ul li .content .row:after {
         content: "";
         display: table;
         clear: both; }
-      .featured-events ul li .head .row:after, .featured-events ul li .content .row:after {
+      .featured-events ul li .content .row:after {
         content: "";
         display: table;
         clear: both; }
-    .featured-events ul li .head {
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-      background-color: #f2f2f2;
-      height: 110px;
-      cursor: pointer; }
-      .featured-events ul li .head:hover {
-        background-color: white; }
-      .featured-events ul li .head h2, .featured-events ul li .head h5 {
-        margin: 0;
-        line-height: 110px; }
+    .featured-events ul li .head .row {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+      .featured-events ul li .head .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .featured-events ul li .head .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+    @media screen and (min-width: 64.063rem) {
       .featured-events ul li .head h2 {
-        color: black;
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 65.88078%; }
         .featured-events ul li .head h2:last-child {
-          margin-right: 0; }
+          margin-right: 0; } }
+    @media screen and (min-width: 64.063rem) {
       .featured-events ul li .head h5 {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%; }
+        width: 31.76157%;
+        line-height: 60px; }
         .featured-events ul li .head h5:last-child {
-          margin-right: 0; }
+          margin-right: 0; } }
+    .featured-events ul li .head, .featured-events ul li .content {
+      padding: 0 1rem; }
+    .featured-events ul li .head {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      background-color: #f2f2f2;
+      cursor: pointer; }
+      .featured-events ul li .head:hover {
+        background-color: white; }
+      .featured-events ul li .head h2, .featured-events ul li .head h5 {
+        margin: 0; }
+      .featured-events ul li .head h2 {
+        padding: 0.8rem 0; }
+        @media screen and (min-width: 64.063rem) {
+          .featured-events ul li .head h2 {
+            padding: 2.5rem 0; } }
+      .featured-events ul li .head h5 {
+        padding: 0 0 0.8rem 0; }
+        @media screen and (min-width: 64.063rem) {
+          .featured-events ul li .head h5 {
+            padding: 2.5rem 0; } }
+      .featured-events ul li .head h2 {
+        color: black; }
     .featured-events ul li .content {
-      padding: 6rem 0;
+      padding: 3rem 1rem;
       border-bottom: 10px solid #ff9684;
       box-sizing: border-box; }
+      @media screen and (min-width: 64.063rem) {
+        .featured-events ul li .content {
+          padding: 6rem 1rem; } }
       .featured-events ul li .content h5:first-child {
         margin-top: 0; }
       .featured-events ul li .content h2:first-child {
@@ -264,19 +294,25 @@ a.circle {
       .featured-events ul li .content p {
         text-align: left; }
       .featured-events ul li .content .left {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%; }
-        .featured-events ul li .content .left:last-child {
-          margin-right: 0; }
-      .featured-events ul li .content .right {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .featured-events ul li .content .right:last-child {
-          margin-right: 0; }
+        margin-bottom: 2.5rem; }
+        @media screen and (min-width: 64.063rem) {
+          .featured-events ul li .content .left {
+            margin-bottom: 0; } }
+      @media screen and (min-width: 64.063rem) {
+        .featured-events ul li .content .left {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%; }
+          .featured-events ul li .content .left:last-child {
+            margin-right: 0; }
+        .featured-events ul li .content .right {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%; }
+          .featured-events ul li .content .right:last-child {
+            margin-right: 0; } }
     .featured-events ul li.active .head {
       background-color: white; }
     .featured-events ul li .content {
@@ -462,6 +498,6 @@ a.circle {
       color: #f2f2f2; }
 
 section {
-  padding: 2rem 1rem 0 1rem; }
+  padding: 2rem 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */
