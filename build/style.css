@@ -319,7 +319,8 @@ a.circle {
       display: none; }
 
 .sponsors {
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 1rem; }
   .sponsors > h3 {
     background-image: url("../images/stroke.png");
     background-size: 186px 46px;
@@ -329,39 +330,56 @@ a.circle {
   .sponsors > a {
     color: #ff9684; }
   .sponsors .row {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
-    .sponsors .row:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .sponsors .row:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .sponsors .row .left {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 14.70196%; }
-      .sponsors .row .left:last-child {
-        margin-right: 0; }
-      .sponsors .row .left img {
-        width: 100%; }
-    .sponsors .row .right {
-      text-align: center;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%; }
-      .sponsors .row .right:last-child {
-        margin-right: 0; }
-      .sponsors .row .right a img {
-        width: 300px;
-        max-width: 33%;
-        vertical-align: middle; }
+    padding-top: 2rem; }
+  @media screen and (max-width: 40rem) {
+    .sponsors .right {
+      text-align: center; }
+      .sponsors .right a:first-child img {
+        margin: 1.5rem 0; }
+      .sponsors .right p {
+        margin: 0; } }
+  .sponsors a img {
+    vertical-align: middle; }
+  @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
+    .sponsors .right p:first-child {
+      margin-top: 2.5rem;
+      margin-bottom: 0; }
+    .sponsors .right p:last-child {
+      margin-top: 0; } }
+  @media screen and (min-width: 64.063rem) {
+    .sponsors .row {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+      .sponsors .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .sponsors .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .sponsors .row .left {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%; }
+        .sponsors .row .left:last-child {
+          margin-right: 0; }
+        .sponsors .row .left img {
+          width: 100%; }
+      .sponsors .row .right {
+        text-align: center;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%; }
+        .sponsors .row .right:last-child {
+          margin-right: 0; }
+        .sponsors .row .right a img {
+          width: 300px;
+          max-width: 33%; } }
 
 .startup-jobs {
   padding-bottom: 4rem;

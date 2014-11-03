@@ -359,27 +359,68 @@ a.circle {
 }
 .sponsors {
   @include stroke-link-header();
+  padding: 2rem 1rem;
+
   .row {
-    @include outer-container();
-    @include row();
-    .left {
-      @include span-columns(2);
-      img {
-        width: 100%;
+    padding-top: 2rem;
+  }
+
+  @include media($small-only) {
+    .right {
+      a:first-child {
+        img {
+          margin: 1.5rem 0;
+        }
+      }
+      text-align: center;
+      p {
+        margin: 0;
       }
     }
+  }
+
+  a {
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  @include media($medium-only) {
     .right {
-      text-align: center;
-      @include span-columns(10);
-      a {
+      p:first-child {
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+      }
+      p:last-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include media($large-up) {
+    .row {
+      @include outer-container();
+      @include row();
+      .left {
+        @include span-columns(2);
         img {
-          width: 300px;
-          max-width: 33%;
-          vertical-align: middle;
+          width: 100%;
+        }
+      }
+      .right {
+        text-align: center;
+        @include span-columns(10);
+        a {
+          img {
+            width: 300px;
+            max-width: 33%;
+
+          }
         }
       }
     }
   }
+
 }
 .startup-jobs {
   padding-bottom: 4rem;
