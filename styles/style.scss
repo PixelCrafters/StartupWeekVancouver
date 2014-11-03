@@ -7,13 +7,19 @@ $mano: 'wc_mano_negra_btaregular';
 
 
 @mixin h1 {
-  font-family: $mano;
   color: #9bdab7;
   text-transform: uppercase;
   text-align: center;
-  line-height: 105.6px;
-  font-size: 100px;
+  font-family: $mano;
   letter-spacing: 0;
+
+  line-height: 72.6px;
+  font-size: 72px;
+
+  @include media($large-up) {
+    line-height: 105.6px;
+    font-size: 100px;
+  }
 }
 
 @mixin h2 {
@@ -81,6 +87,12 @@ $green: #9bdab7;
 $orange: #ff9684;
 $red: #ff9684;
 $yellow: #dfd85f;
+$reddish: #c86b84;
+
+$small-only: new-breakpoint(max-width 40rem);
+$medium-up: new-breakpoint(min-width 40.063rem);
+$medium-only: new-breakpoint(min-width 40.063rem max-width 64rem);
+$large-up: new-breakpoint(min-width 64.063rem);
 
 h1 { @include h1; }
 h2 { @include h2; }
@@ -120,14 +132,14 @@ a {
 
 a.button {
   @include h4;
-  @include hover-darken-bg($bgColour: #c86b84);
+  @include hover-darken-bg($bgColour: $red);
   color: white;
   padding: 0.5em 1em;
 }
 
 a.circle {
   @include h4;
-  @include hover-darken-bg($bgColour: #ff9684);
+  @include hover-darken-bg($bgColour: $red);
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -147,25 +159,46 @@ a.circle {
     h1 {
       @include transform(rotate(-3deg));
       margin: 0;
-      padding-top: 14rem;
+      padding-top: 4rem;
+      @include media($medium-only) {
+          padding-top: 8rem;
+      }
+      @include media($large-up) {
+          padding-top: 14rem;
+      }
     }
     h2,p {
       color: white;
     }
     .intro-row {
-      @include row();
       padding: 2rem 0;
-      h2 {
-        @include shift(2);
-        @include span-columns(4);
+
+      @include media($medium-only) {
+        max-width: 600px;
+        margin: 0 auto;
       }
-      p {
-        @include span-columns(4);
+
+      @include media($large-up) {
+          @include row();
+          h2 {
+            @include shift(2);
+            @include span-columns(4);
+          }
+          p {
+            @include span-columns(4);
+          }
       }
+
     }
     .button-row {
       text-align: center;
-      padding-bottom: 10rem;
+      padding-bottom: 4rem;
+      @include media($medium-only) {
+        padding-bottom: 8rem;
+      }
+      @include media($large-up) {
+        padding-bottom: 10rem;
+      }
     }
   }
 }
@@ -350,9 +383,40 @@ a.circle {
 }
 .contact {
   padding: 0;
-  img {
-    width: 100%;
+  background-image: url('../images/SWV_skyrocket_contact_tile.jpg');
+  background-repeat: repeat-x;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+
+  a {
+    @include h2;
+    color: black;
+    background: white;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    display: block;
+    position: absolute;
+    left: 50%;
+    padding: 0 0.2em;
+
+    &:nth-child(1) {
+      margin-left: -228px;
+      top: 100px;
+    }
+    &:nth-child(2) {
+      margin-left: 122px;
+      top: 200px;
+    }
+    &:nth-child(3) {
+      margin-left: -361px;
+      top: 300px;
+      padding: 0;
+    }
+
   }
+
 }
 .why {
   padding: 14rem 0 4rem 0;
@@ -390,5 +454,5 @@ a.circle {
 
 
 section {
-  padding: 2rem 0 0 0;
+  padding: 2rem 1rem 0 1rem;
 }

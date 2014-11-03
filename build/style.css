@@ -13,13 +13,17 @@ html {
   box-sizing: inherit; }
 
 h1 {
-  font-family: "wc_mano_negra_btaregular";
   color: #9bdab7;
   text-transform: uppercase;
   text-align: center;
-  line-height: 105.6px;
-  font-size: 100px;
-  letter-spacing: 0; }
+  font-family: "wc_mano_negra_btaregular";
+  letter-spacing: 0;
+  line-height: 72.6px;
+  font-size: 72px; }
+  @media screen and (min-width: 64.063rem) {
+    h1 {
+      line-height: 105.6px;
+      font-size: 100px; } }
 
 h2 {
   font-family: "franklin-gothic-ext-comp-urw";
@@ -76,14 +80,14 @@ a.button {
   text-transform: uppercase;
   line-height: 31.2px;
   letter-spacing: 0.08em;
-  background-color: #c86b84;
+  background-color: #ff9684;
   -webkit-transition: background-color 0.1s ease-in-out;
   -moz-transition: background-color 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out;
   color: white;
   padding: 0.5em 1em; }
   a.button:hover {
-    background-color: #ba4665; }
+    background-color: #ff6a51; }
 
 a.circle {
   font-family: "franklin-gothic-ext-comp-urw";
@@ -124,34 +128,52 @@ a.circle {
       -o-transform: rotate(-3deg);
       transform: rotate(-3deg);
       margin: 0;
-      padding-top: 14rem; }
+      padding-top: 4rem; }
+      @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
+        .header > div h1 {
+          padding-top: 8rem; } }
+      @media screen and (min-width: 64.063rem) {
+        .header > div h1 {
+          padding-top: 14rem; } }
     .header > div h2, .header > div p {
       color: white; }
     .header > div .intro-row {
-      display: block;
       padding: 2rem 0; }
-      .header > div .intro-row:after {
-        content: "";
-        display: table;
-        clear: both; }
-      .header > div .intro-row h2 {
-        margin-left: 17.05961%;
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .header > div .intro-row h2:last-child {
-          margin-right: 0; }
-      .header > div .intro-row p {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .header > div .intro-row p:last-child {
-          margin-right: 0; }
+      @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
+        .header > div .intro-row {
+          max-width: 600px;
+          margin: 0 auto; } }
+      @media screen and (min-width: 64.063rem) {
+        .header > div .intro-row {
+          display: block; }
+          .header > div .intro-row:after {
+            content: "";
+            display: table;
+            clear: both; }
+          .header > div .intro-row h2 {
+            margin-left: 17.05961%;
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 31.76157%; }
+            .header > div .intro-row h2:last-child {
+              margin-right: 0; }
+          .header > div .intro-row p {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 31.76157%; }
+            .header > div .intro-row p:last-child {
+              margin-right: 0; } }
     .header > div .button-row {
       text-align: center;
-      padding-bottom: 10rem; }
+      padding-bottom: 4rem; }
+      @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
+        .header > div .button-row {
+          padding-bottom: 8rem; } }
+      @media screen and (min-width: 64.063rem) {
+        .header > div .button-row {
+          padding-bottom: 10rem; } }
 
 .featured-events {
   text-align: center; }
@@ -360,9 +382,38 @@ a.circle {
     opacity: 1; }
 
 .contact {
-  padding: 0; }
-  .contact img {
-    width: 100%; }
+  padding: 0;
+  background-image: url("../images/SWV_skyrocket_contact_tile.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  min-height: 500px;
+  position: relative; }
+  .contact a {
+    font-family: "franklin-gothic-ext-comp-urw";
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 57.6-px;
+    letter-spacing: 0.14em;
+    color: black;
+    background: white;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    display: block;
+    position: absolute;
+    left: 50%;
+    padding: 0 0.2em; }
+    .contact a:nth-child(1) {
+      margin-left: -228px;
+      top: 100px; }
+    .contact a:nth-child(2) {
+      margin-left: 122px;
+      top: 200px; }
+    .contact a:nth-child(3) {
+      margin-left: -361px;
+      top: 300px;
+      padding: 0; }
 
 .why {
   padding: 14rem 0 4rem 0;
@@ -411,6 +462,6 @@ a.circle {
       color: #f2f2f2; }
 
 section {
-  padding: 2rem 0 0 0; }
+  padding: 2rem 1rem 0 1rem; }
 
 /*# sourceMappingURL=style.css.map */
