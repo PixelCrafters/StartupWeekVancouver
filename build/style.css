@@ -18,8 +18,7 @@ h1 {
   text-align: center;
   font-family: "wc_mano_negra_btaregular";
   letter-spacing: 0;
-  line-height: 72.6px;
-  font-size: 72px; }
+  font-size: 63px; }
   @media screen and (min-width: 64.063rem) {
     h1 {
       line-height: 105.6px;
@@ -27,11 +26,15 @@ h1 {
 
 h2 {
   font-family: "franklin-gothic-ext-comp-urw";
-  font-size: 48px;
   text-transform: uppercase;
   text-align: left;
-  line-height: 57.6-px;
+  font-size: 41px;
   letter-spacing: 0.14em; }
+  @media screen and (min-width: 64.063rem) {
+    h2 {
+      font-size: 48px;
+      line-height: 57.6px;
+      letter-spacing: 0.14em; } }
 
 h3 {
   font-family: "wc_mano_negra_btaregular";
@@ -113,6 +116,8 @@ a.circle {
   background-size: cover;
   background-position: center;
   padding: 2rem 1rem 0 1rem; }
+  .header img {
+    max-width: 80%; }
   .header > div {
     max-width: 68em;
     margin-left: auto;
@@ -128,7 +133,7 @@ a.circle {
       -o-transform: rotate(-3deg);
       transform: rotate(-3deg);
       margin: 0;
-      padding-top: 4rem; }
+      padding-top: 2rem; }
       @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
         .header > div h1 {
           padding-top: 8rem; } }
@@ -137,37 +142,38 @@ a.circle {
           padding-top: 14rem; } }
     .header > div h2, .header > div p {
       color: white; }
-    .header > div .intro-row {
-      padding: 2rem 0; }
-      @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
-        .header > div .intro-row {
-          max-width: 600px;
-          margin: 0 auto; } }
-      @media screen and (min-width: 64.063rem) {
-        .header > div .intro-row {
-          display: block; }
-          .header > div .intro-row:after {
-            content: "";
-            display: table;
-            clear: both; }
-          .header > div .intro-row h2 {
-            margin-left: 17.05961%;
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 31.76157%; }
-            .header > div .intro-row h2:last-child {
-              margin-right: 0; }
-          .header > div .intro-row p {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 31.76157%; }
-            .header > div .intro-row p:last-child {
-              margin-right: 0; } }
+    @media screen and (min-width: 40.063rem) {
+      .header > div .intro-row {
+        padding: 2rem 0; } }
+    @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
+      .header > div .intro-row {
+        max-width: 600px;
+        margin: 0 auto; } }
+    @media screen and (min-width: 64.063rem) {
+      .header > div .intro-row {
+        display: block; }
+        .header > div .intro-row:after {
+          content: "";
+          display: table;
+          clear: both; }
+        .header > div .intro-row h2 {
+          margin-left: 17.05961%;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%; }
+          .header > div .intro-row h2:last-child {
+            margin-right: 0; }
+        .header > div .intro-row p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%; }
+          .header > div .intro-row p:last-child {
+            margin-right: 0; } }
     .header > div .button-row {
       text-align: center;
-      padding-bottom: 4rem; }
+      padding: 1rem 0 3rem 0; }
       @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
         .header > div .button-row {
           padding-bottom: 8rem; } }
@@ -321,6 +327,8 @@ a.circle {
 .sponsors {
   text-align: center;
   padding: 2rem 1rem; }
+  .sponsors img {
+    max-width: 80%; }
   .sponsors > h3 {
     background-image: url("../images/stroke.png");
     background-size: 186px 46px;
@@ -448,33 +456,46 @@ a.circle {
   background-repeat: repeat-x;
   background-position: center;
   min-height: 500px;
-  position: relative; }
+  position: relative;
+  text-align: center;
+  padding-top: 100px; }
   .contact a {
     font-family: "franklin-gothic-ext-comp-urw";
-    font-size: 48px;
     text-transform: uppercase;
     text-align: left;
-    line-height: 57.6-px;
+    font-size: 41px;
     letter-spacing: 0.14em;
     color: black;
     background: white;
     height: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-    display: block;
-    position: absolute;
-    left: 50%;
-    padding: 0 0.2em; }
-    .contact a:nth-child(1) {
-      margin-left: -228px;
-      top: 100px; }
-    .contact a:nth-child(2) {
-      margin-left: 122px;
-      top: 200px; }
-    .contact a:nth-child(3) {
-      margin-left: -361px;
-      top: 300px;
-      padding: 0; }
+    line-height: 100px !important; }
+    @media screen and (min-width: 64.063rem) {
+      .contact a {
+        font-size: 48px;
+        line-height: 57.6px;
+        letter-spacing: 0.14em; } }
+    @media screen and (max-width: 40rem) {
+      .contact a {
+        font-size: 30px;
+        text-align: center;
+        display: inline-block;
+        width: 225px; } }
+    @media screen and (min-width: 64.063rem) {
+      .contact a {
+        display: block;
+        position: absolute;
+        left: 50%;
+        padding: 0 0.2em; }
+        .contact a:nth-of-type(1) {
+          margin-left: -228px;
+          top: 100px; }
+        .contact a:nth-of-type(2) {
+          margin-left: 122px;
+          top: 200px; }
+        .contact a:nth-of-type(3) {
+          margin-left: -361px;
+          top: 300px;
+          padding: 0; } }
 
 .why {
   padding: 14rem 0 4rem 0;

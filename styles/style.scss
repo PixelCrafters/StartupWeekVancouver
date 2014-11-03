@@ -13,8 +13,7 @@ $mano: 'wc_mano_negra_btaregular';
   font-family: $mano;
   letter-spacing: 0;
 
-  line-height: 72.6px;
-  font-size: 72px;
+  font-size: 63px;
 
   @include media($large-up) {
     line-height: 105.6px;
@@ -24,11 +23,20 @@ $mano: 'wc_mano_negra_btaregular';
 
 @mixin h2 {
   font-family: $frank;
-  font-size: 48px;
+
   text-transform: uppercase;
   text-align: left;
-  line-height: 57.6-px;
+
+  font-size: 41px;
+
   letter-spacing: 0.14em;
+
+  @include media($large-up) {
+      font-size: 48px;
+      line-height: 57.6px;
+      letter-spacing: 0.14em;
+  }
+
 }
 
 @mixin h3 {
@@ -153,13 +161,17 @@ a.circle {
   background-size: cover;
   background-position: center;
   padding: 2rem 1rem 0 1rem;
+
+  img {
+    max-width: 80%;
+  }
   > div {
     @include outer-container();
 
     h1 {
       @include transform(rotate(-3deg));
       margin: 0;
-      padding-top: 4rem;
+      padding-top: 2rem;
       @include media($medium-only) {
           padding-top: 8rem;
       }
@@ -171,7 +183,10 @@ a.circle {
       color: white;
     }
     .intro-row {
-      padding: 2rem 0;
+
+      @include media($medium-up) {
+        padding: 2rem 0;
+      }
 
       @include media($medium-only) {
         max-width: 600px;
@@ -192,7 +207,7 @@ a.circle {
     }
     .button-row {
       text-align: center;
-      padding-bottom: 4rem;
+      padding: 1rem 0 3rem 0;
       @include media($medium-only) {
         padding-bottom: 8rem;
       }
@@ -358,6 +373,11 @@ a.circle {
 
 }
 .sponsors {
+
+  img {
+    max-width: 80%;
+  }
+
   @include stroke-link-header();
   padding: 2rem 1rem;
 
@@ -483,31 +503,54 @@ a.circle {
   min-height: 500px;
   position: relative;
 
+  text-align: center;
+
+  padding-top: 100px;
+
   a {
     @include h2;
+    @include media($small-only) {
+      font-size: 30px;
+      text-align: center;
+      display: inline-block;
+      width: 225px;
+    }
     color: black;
     background: white;
     height: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-    display: block;
-    position: absolute;
-    left: 50%;
-    padding: 0 0.2em;
+    line-height: 100px !important;
 
-    &:nth-child(1) {
-      margin-left: -228px;
-      top: 100px;
+    &:nth-of-type(1) {
+
     }
-    &:nth-child(2) {
-      margin-left: 122px;
-      top: 200px;
+    &:nth-of-type(2) {
+
     }
-    &:nth-child(3) {
-      margin-left: -361px;
-      top: 300px;
-      padding: 0;
+    &:nth-of-type(3) {
+
     }
+
+    @include media($large-up) {
+      display: block;
+      position: absolute;
+      left: 50%;
+      padding: 0 0.2em;
+
+      &:nth-of-type(1) {
+        margin-left: -228px;
+        top: 100px;
+      }
+      &:nth-of-type(2) {
+        margin-left: 122px;
+        top: 200px;
+      }
+      &:nth-of-type(3) {
+        margin-left: -361px;
+        top: 300px;
+        padding: 0;
+      }
+    }
+
 
   }
 
