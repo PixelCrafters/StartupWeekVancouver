@@ -9,4 +9,19 @@ $(document).ready(function() {
   });
 
   $("ul > li.active > .content").css("display","block");
+
+  $(window).scroll(function () {
+    var originalPosition = 0;
+    if ($(".menu").hasClass('fixed')) {
+      originalPosition = $(".menu").data("position");
+    } else {
+      originalPosition = $(".menu").offset().top;
+    }
+    if ($('body').scrollTop() > originalPosition) {
+      $(".menu").data("position", originalPosition);
+      $(".menu").addClass("fixed");
+    } else {
+      $(".menu").removeClass("fixed");
+    }
+  });
 });
