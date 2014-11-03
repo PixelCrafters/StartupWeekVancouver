@@ -511,15 +511,13 @@ a.circle {
 
   a {
     @include h2;
+    color: black;
 
     font-size: 30px;
     text-align: center;
     display: inline-block;
     width: 225px;
 
-
-
-    color: black;
     background: white;
     height: 100px;
     line-height: 100px !important;
@@ -535,6 +533,12 @@ a.circle {
     }
 
     @include media($large-up) {
+      color: $darkGrey;
+      @include transition(color 0.5s);
+      &:hover {
+        color: black;
+      }
+      
       display: block;
       position: absolute;
       left: 50%;
