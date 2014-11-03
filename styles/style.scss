@@ -423,7 +423,10 @@ a.circle {
 
 }
 .startup-jobs {
-  padding-bottom: 4rem;
+  padding: 2rem 1rem;
+  @include media($large-up) {
+    padding-bottom: 4rem;
+  }
   h3 {
     @include stroke();
     color: white;
@@ -433,13 +436,21 @@ a.circle {
   background-image: url('../images/SWV_skyrocket_guys.jpg');
   background-size: cover;
   background-position: center;
-  .row {
-    @include row();
-    @include outer-container();
-    p {
-      color: white;
-      @include shift(2);
-      @include span-columns(8);
+  p {
+    color: white;
+  }
+  p + p {
+    padding-bottom: 2rem;
+  }
+  @include media($large-up) {
+
+    .row {
+      @include row();
+      @include outer-container();
+      p {
+        @include shift(2);
+        @include span-columns(8);
+      }
     }
   }
 }

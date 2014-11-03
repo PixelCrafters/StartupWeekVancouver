@@ -382,10 +382,13 @@ a.circle {
           max-width: 33%; } }
 
 .startup-jobs {
-  padding-bottom: 4rem;
+  padding: 2rem 1rem;
   background-image: url("../images/SWV_skyrocket_guys.jpg");
   background-size: cover;
   background-position: center; }
+  @media screen and (min-width: 64.063rem) {
+    .startup-jobs {
+      padding-bottom: 4rem; } }
   .startup-jobs h3 {
     background-image: url("../images/stroke.png");
     background-size: 186px 46px;
@@ -394,28 +397,32 @@ a.circle {
     color: white;
     margin: 0;
     padding: 2rem; }
-  .startup-jobs .row {
-    display: block;
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    .startup-jobs .row:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .startup-jobs .row:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .startup-jobs .row p {
-      color: white;
-      margin-left: 17.05961%;
-      float: left;
+  .startup-jobs p {
+    color: white; }
+  .startup-jobs p + p {
+    padding-bottom: 2rem; }
+  @media screen and (min-width: 64.063rem) {
+    .startup-jobs .row {
       display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
-      .startup-jobs .row p:last-child {
-        margin-right: 0; }
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto; }
+      .startup-jobs .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .startup-jobs .row:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .startup-jobs .row p {
+        margin-left: 17.05961%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        .startup-jobs .row p:last-child {
+          margin-right: 0; } }
 
 .feed-me {
   padding: 0;
