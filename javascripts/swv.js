@@ -17,11 +17,19 @@ $(document).ready(function() {
     } else {
       originalPosition = $(".menu").offset().top;
     }
-    if ($('body').scrollTop() > originalPosition) {
+    //console.debug($('body').scrollTop(), originalPosition);
+    if ($(document).scrollTop() > originalPosition) {
       $(".menu").data("position", originalPosition);
       $(".menu").addClass("fixed");
     } else {
       $(".menu").removeClass("fixed");
     }
   });
+
+  $(".menu a.scroll").click(function (e) {
+    $('html, body').animate({
+      scrollTop: $( $(this).attr("href") ).offset().top
+    });
+    e.preventDefault();
+  })
 });

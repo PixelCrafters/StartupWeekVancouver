@@ -118,10 +118,11 @@ a.circle {
   background-image: url("../images/SWV_skyrocket_header1.1.jpg");
   background-size: cover;
   background-position: center;
-  padding: 2rem 1rem 0 1rem; }
+  padding: 2rem 1rem 0 1rem;
+  position: relative; }
   @media screen and (min-width: 64.063rem) {
     .header {
-      padding: 2rem 5rem 0 5rem; } }
+      padding: 2rem 6rem 0 1rem; } }
   .header img {
     max-width: 80%; }
   .header > div {
@@ -188,6 +189,61 @@ a.circle {
         .header > div .button-row {
           padding-bottom: 10rem; } }
 
+ul.menu {
+  list-style: none;
+  font-size: 32px;
+  color: black;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 1rem 0 0 0;
+  display: none; }
+  @media screen and (min-width: 64.063rem) {
+    ul.menu {
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 99;
+      left: 0;
+      box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.45); }
+      ul.menu.fixed {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0; } }
+  ul.menu li:not(:first-child) {
+    margin: 2rem 0; }
+  ul.menu li > i {
+    font-size: 5rem;
+    color: #cccccc; }
+  ul.menu li a {
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+    color: #58585b; }
+    ul.menu li a i {
+      padding: 0.5rem; }
+    ul.menu li a:hover {
+      color: black; }
+    ul.menu li a * {
+      display: block; }
+    ul.menu li a span {
+      font-size: 0.8rem; }
+  ul.menu li:last-child {
+    margin: 0;
+    padding: 4rem 0;
+    background-image: url("../images/stroke_nav.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    left: 0; }
+    ul.menu li:last-child a {
+      color: white; }
+      ul.menu li:last-child a:hover {
+        color: white; }
+
 .featured-events {
   text-align: center; }
   .featured-events > h3 {
@@ -201,27 +257,6 @@ a.circle {
   @media screen and (min-width: 64.063rem) {
     .featured-events {
       position: relative; } }
-  .featured-events ul.menu {
-    list-style: none;
-    font-size: 32px;
-    color: black;
-    height: 1000%;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 0;
-    padding: 1rem;
-    display: none; }
-    @media screen and (min-width: 64.063rem) {
-      .featured-events ul.menu {
-        display: block;
-        position: absolute;
-        z-index: 99;
-        top: 0;
-        left: 0;
-        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.45); }
-        .featured-events ul.menu.fixed {
-          position: fixed;
-          top: 0;
-          left: 0; } }
   .featured-events ul:not(.menu) {
     margin: 2rem 0 0 0;
     padding: 0;
@@ -293,7 +328,7 @@ a.circle {
         padding: 0 1rem; }
         @media screen and (min-width: 64.063rem) {
           .featured-events ul:not(.menu) li .head, .featured-events ul:not(.menu) li .content {
-            padding: 0 5rem; } }
+            padding: 0 1rem 0 6rem; } }
       .featured-events ul:not(.menu) li .head {
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -323,7 +358,7 @@ a.circle {
         box-sizing: border-box; }
         @media screen and (min-width: 64.063rem) {
           .featured-events ul:not(.menu) li .content {
-            padding: 6rem 5rem; } }
+            padding: 6rem 1rem 6rem 6rem; } }
         .featured-events ul:not(.menu) li .content h5:first-child {
           margin-top: 0; }
         .featured-events ul:not(.menu) li .content h2:first-child {
@@ -395,7 +430,7 @@ a.circle {
       margin-top: 0; } }
   @media screen and (min-width: 64.063rem) {
     .sponsors {
-      padding: 2rem 5rem; }
+      padding: 2rem 1rem 2rem 6rem; }
       .sponsors .row {
         max-width: 68em;
         margin-left: auto;
@@ -437,7 +472,7 @@ a.circle {
   background-position: center; }
   @media screen and (min-width: 64.063rem) {
     .startup-jobs {
-      padding: 2rem 5rem 4rem 5rem; } }
+      padding: 2rem 1rem 4rem 6rem; } }
   .startup-jobs h3 {
     background-image: url("../images/stroke.png");
     background-size: 186px 46px;
