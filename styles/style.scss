@@ -207,11 +207,11 @@ a.circle {
       @include media($large-up) {
           @include row();
           h2 {
-            @include shift(2);
-            @include span-columns(4);
+            @include shift(1);
+            @include span-columns(5);
           }
           p {
-            @include span-columns(4);
+            @include span-columns(5);
           }
       }
 
