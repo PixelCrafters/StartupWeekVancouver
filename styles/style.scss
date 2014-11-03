@@ -511,12 +511,14 @@ a.circle {
 
   a {
     @include h2;
-    @include media($small-only) {
-      font-size: 30px;
-      text-align: center;
-      display: inline-block;
-      width: 225px;
-    }
+
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 225px;
+
+
+
     color: black;
     background: white;
     height: 100px;
@@ -537,6 +539,7 @@ a.circle {
       position: absolute;
       left: 50%;
       padding: 0 0.2em;
+      width: auto;
 
       &:nth-of-type(1) {
         margin-left: -228px;
