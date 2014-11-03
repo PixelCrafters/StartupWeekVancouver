@@ -141,7 +141,8 @@ a.circle {
         .header > div h1 {
           padding-top: 14rem; } }
     .header > div h2, .header > div p {
-      color: white; }
+      color: white;
+      margin-top: 0; }
     @media screen and (min-width: 40.063rem) {
       .header > div .intro-row {
         padding: 2rem 0; } }
@@ -498,10 +499,16 @@ a.circle {
           padding: 0; } }
 
 .why {
-  padding: 14rem 0 4rem 0;
+  padding: 4rem 1rem 4rem 1rem;
   background-image: url("../images/SWV_skyrocket_girl.jpg");
   background-size: cover;
   background-position: center; }
+  @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
+    .why {
+      padding: 8rem 1rem 4rem 1rem; } }
+  @media screen and (min-width: 64.063rem) {
+    .why {
+      padding: 14rem 1rem 4rem 1rem; } }
   .why .row {
     display: block;
     max-width: 68em;
@@ -517,6 +524,19 @@ a.circle {
       content: "";
       display: table;
       clear: both; }
+    @media screen and (min-width: 40.063rem) and (max-width: 64rem) {
+      .why .row div, .why .row p {
+        width: 600px;
+        margin: 0 auto; } }
+    @media screen and (min-width: 64.063rem) {
+      .why .row div, .why .row p {
+        margin-left: 25.58941%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .why .row div:last-child, .why .row p:last-child {
+          margin-right: 0; } }
     .why .row h1 {
       color: #ff9684;
       -webkit-transform: rotate(-3deg);
@@ -525,18 +545,13 @@ a.circle {
       -o-transform: rotate(-3deg);
       transform: rotate(-3deg);
       margin: 0; }
-    .why .row div, .why .row p {
-      margin-left: 25.58941%;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .why .row div:last-child, .why .row p:last-child {
-        margin-right: 0; }
     .why .row p {
       font-size: 22px;
       text-align: left;
-      padding: 2rem 0 8rem 0; }
+      padding: 0rem 0 4rem 0; }
+      @media screen and (min-width: 40.063rem) {
+        .why .row p {
+          padding: 2rem 0 8rem 0; } }
     .why .row i {
       font-size: 52px; }
     .why .row small {
