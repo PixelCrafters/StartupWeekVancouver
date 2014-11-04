@@ -96,6 +96,28 @@ $red: #ff9684;
 $yellow: #dfd85f;
 $reddish: #c86b84;
 
+$iceCreamPurple: #d093bf;
+$iceCreamLightPurple: #e2cfd5;
+$iceCreamOrange: #ffad67;
+$iceCreateLightOrange: #ffc09d;
+$iceCreamSalmon: #ff928e;
+$iceCreamMaroon: #c66a81;
+$iceCreamLightBlue: #bedadb;
+$iceCreamLightGreen: #c2e2a1;
+$iceCreamTeal: #6dc9c8;
+
+$iceCreams: #d093bf #e2cfd5 #ffad67 #ffc09d #ff928e #c66a81 #bedadb #c2e2a1 #6dc9c8;
+$eventImages: "event-images_swe.jpg"
+              "event-images_devops.jpg"
+              "event-images_invoke.jpg"
+              "event-images_techfest.jpg"
+              "event-images_dan_mart.jpg"
+              "event-images_impact.jpg"
+              "event-images_payement_plat.jpg"
+              "event-images_sky.jpg"
+              "event-images_casc.jpg";
+
+
 $small-only: new-breakpoint(max-width 40rem);
 $medium-up: new-breakpoint(min-width 40.063rem);
 $medium-only: new-breakpoint(min-width 40.063rem max-width 64rem);
@@ -324,23 +346,17 @@ ul.menu {
     list-style: none;
     li {
 
-      &:nth-child(1n) {
-        border-bottom: 10px solid $orange;
-        background-image: url('../images/event-images_impact.jpg');
-        background-size: cover;
-        background-position: center;
-      }
-      &:nth-child(2n) {
-        border-bottom: 10px solid $green;
-        background-image: url('../images/event-images_sky.jpg');
-        background-size: cover;
-        background-position: center;
-      }
-      &:nth-child(3n) {
-        border-bottom: 10px solid $yellow;
-        background-image: url('../images/event-images_casc.jpg');
-        background-size: cover;
-        background-position: center;
+
+      @for $i from 1 through length($iceCreams) {
+        &:nth-child(#{$i}n) {
+          border-bottom: 10px solid nth($iceCreams, $i);
+          a.button {
+            background-color: nth($iceCreams, $i);
+          }
+          background-image: url('../images/#{nth($eventImages,$i)}');
+          background-size: cover;
+          background-position: center;
+        }
       }
 
       .content {

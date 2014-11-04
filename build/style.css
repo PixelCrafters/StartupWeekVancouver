@@ -265,20 +265,68 @@ ul.menu {
     padding: 0;
     list-style: none; }
     .featured-events ul:not(.menu) li:nth-child(1n) {
-      border-bottom: 10px solid #ff9684;
+      border-bottom: 10px solid #d093bf;
+      background-image: url("../images/event-images_swe.jpg");
+      background-size: cover;
+      background-position: center; }
+      .featured-events ul:not(.menu) li:nth-child(1n) a.button {
+        background-color: #d093bf; }
+    .featured-events ul:not(.menu) li:nth-child(2n) {
+      border-bottom: 10px solid #e2cfd5;
+      background-image: url("../images/event-images_devops.jpg");
+      background-size: cover;
+      background-position: center; }
+      .featured-events ul:not(.menu) li:nth-child(2n) a.button {
+        background-color: #e2cfd5; }
+    .featured-events ul:not(.menu) li:nth-child(3n) {
+      border-bottom: 10px solid #ffad67;
+      background-image: url("../images/event-images_invoke.jpg");
+      background-size: cover;
+      background-position: center; }
+      .featured-events ul:not(.menu) li:nth-child(3n) a.button {
+        background-color: #ffad67; }
+    .featured-events ul:not(.menu) li:nth-child(4n) {
+      border-bottom: 10px solid #ffc09d;
+      background-image: url("../images/event-images_techfest.jpg");
+      background-size: cover;
+      background-position: center; }
+      .featured-events ul:not(.menu) li:nth-child(4n) a.button {
+        background-color: #ffc09d; }
+    .featured-events ul:not(.menu) li:nth-child(5n) {
+      border-bottom: 10px solid #ff928e;
+      background-image: url("../images/event-images_dan_mart.jpg");
+      background-size: cover;
+      background-position: center; }
+      .featured-events ul:not(.menu) li:nth-child(5n) a.button {
+        background-color: #ff928e; }
+    .featured-events ul:not(.menu) li:nth-child(6n) {
+      border-bottom: 10px solid #c66a81;
       background-image: url("../images/event-images_impact.jpg");
       background-size: cover;
       background-position: center; }
-    .featured-events ul:not(.menu) li:nth-child(2n) {
-      border-bottom: 10px solid #9bdab7;
+      .featured-events ul:not(.menu) li:nth-child(6n) a.button {
+        background-color: #c66a81; }
+    .featured-events ul:not(.menu) li:nth-child(7n) {
+      border-bottom: 10px solid #bedadb;
+      background-image: url("../images/event-images_payement_plat.jpg");
+      background-size: cover;
+      background-position: center; }
+      .featured-events ul:not(.menu) li:nth-child(7n) a.button {
+        background-color: #bedadb; }
+    .featured-events ul:not(.menu) li:nth-child(8n) {
+      border-bottom: 10px solid #c2e2a1;
       background-image: url("../images/event-images_sky.jpg");
       background-size: cover;
       background-position: center; }
-    .featured-events ul:not(.menu) li:nth-child(3n) {
-      border-bottom: 10px solid #dfd85f;
+      .featured-events ul:not(.menu) li:nth-child(8n) a.button {
+        background-color: #c2e2a1; }
+    .featured-events ul:not(.menu) li:nth-child(9n) {
+      border-bottom: 10px solid #6dc9c8;
       background-image: url("../images/event-images_casc.jpg");
       background-size: cover;
       background-position: center; }
+      .featured-events ul:not(.menu) li:nth-child(9n) a.button {
+        background-color: #6dc9c8; }
     .featured-events ul:not(.menu) li .content .row {
       max-width: 68em;
       margin-left: auto;
