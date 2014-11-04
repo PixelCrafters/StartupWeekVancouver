@@ -455,6 +455,10 @@ ul.menu {
   padding: 2rem 1rem; }
   .sponsors img {
     max-width: 80%; }
+    .sponsors img.small {
+      max-width: 60%; }
+    .sponsors img.large {
+      max-width: 100%; }
   .sponsors > h3 {
     background-image: url("../images/stroke.png");
     background-size: 186px 46px;
@@ -514,8 +518,11 @@ ul.menu {
           .sponsors .row .right:last-child {
             margin-right: 0; }
           .sponsors .row .right a img {
-            width: 300px;
-            max-width: 33%; } }
+            max-width: 33%; }
+            .sponsors .row .right a img.small {
+              max-width: 22%; }
+            .sponsors .row .right a img.large {
+              max-width: 39%; } }
   .sponsors .line {
     display: none;
     width: 100%;

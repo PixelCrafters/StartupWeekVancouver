@@ -502,6 +502,12 @@ ul.menu {
 
   img {
     max-width: 80%;
+    &.small {
+      max-width: 60%;
+    }
+    &.large {
+      max-width: 100%;
+    }
   }
 
   @include stroke-link-header();
@@ -559,9 +565,15 @@ ul.menu {
         @include span-columns(10);
         a {
           img {
-            width: 300px;
+            //width: 300px;
             max-width: 33%;
 
+            &.small {
+              max-width: 22%;
+            }
+            &.large {
+              max-width: 39%;
+            }
           }
         }
       }
