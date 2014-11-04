@@ -182,6 +182,8 @@ a.circle {
           width: 40.29137%; }
           .header > div .intro-row p:last-child {
             margin-right: 0; } }
+    .header > div .intro-row p {
+      font-size: 22px; }
     .header > div .button-row {
       text-align: center;
       padding: 1rem 0 3rem 0; }
@@ -429,10 +431,15 @@ ul.menu {
       background: #f2f2f2; }
       .featured-events ul:not(.menu) .white-bg:hover {
         background: white; }
+    .featured-events ul:not(.menu) li:hover .white-bg,
     .featured-events ul:not(.menu) li.active .white-bg {
       background: transparent; }
-    .featured-events ul:not(.menu) li.active .head h2, .featured-events ul:not(.menu) li.active .head h5, .featured-events ul:not(.menu) li.active .head p {
+    .featured-events ul:not(.menu) li:hover .head h2, .featured-events ul:not(.menu) li:hover .head h5, .featured-events ul:not(.menu) li:hover .head p,
+    .featured-events ul:not(.menu) li.active .head h2,
+    .featured-events ul:not(.menu) li.active .head h5,
+    .featured-events ul:not(.menu) li.active .head p {
       color: white; }
+    .featured-events ul:not(.menu) li:hover .head p,
     .featured-events ul:not(.menu) li.active .head p {
       opacity: 1; }
     .featured-events ul:not(.menu) li .content {

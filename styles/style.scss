@@ -242,7 +242,9 @@ a.circle {
             @include span-columns(5);
           }
       }
-
+      p {
+        font-size: 22px;
+      }
     }
     .button-row {
       text-align: center;
@@ -469,6 +471,7 @@ ul.menu {
       }
     }
 
+    li:hover,
     li.active {
       .white-bg {
         background: transparent;
