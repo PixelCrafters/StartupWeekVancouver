@@ -323,36 +323,24 @@ ul.menu {
     padding: 0;
     list-style: none;
     li {
-      overflow: hidden;
-      &:nth-child(1) {
-        .head {
-          border-bottom: 10px solid $orange;
-        }
-        .content {
-          background-image: url('../images/event-images_impact.jpg');
-          background-size: cover;
-          background-position: center;
-        }
+
+      &:nth-child(1n) {
+        border-bottom: 10px solid $orange;
+        background-image: url('../images/event-images_impact.jpg');
+        background-size: cover;
+        background-position: center;
       }
-      &:nth-child(2) {
-        .head {
-          border-bottom: 10px solid $green;
-        }
-        .content {
-          background-image: url('../images/event-images_sky.jpg');
-          background-size: cover;
-          background-position: center;
-        }
+      &:nth-child(2n) {
+        border-bottom: 10px solid $green;
+        background-image: url('../images/event-images_sky.jpg');
+        background-size: cover;
+        background-position: center;
       }
-      &:nth-child(3) {
-        .head {
-          border-bottom: 10px solid $yellow;
-        }
-        .content {
-          background-image: url('../images/event-images_casc.jpg');
-          background-size: cover;
-          background-position: center;
-        }
+      &:nth-child(3n) {
+        border-bottom: 10px solid $yellow;
+        background-image: url('../images/event-images_casc.jpg');
+        background-size: cover;
+        background-position: center;
       }
 
       .content {
@@ -367,17 +355,6 @@ ul.menu {
           @include outer-container();
           @include row();
         }
-        h2 {
-          @include media($large-up) {
-              @include span-columns(8);
-          }
-        }
-        h5 {
-          @include media($large-up) {
-              @include span-columns(4);
-              line-height: 60px;
-          }
-        }
       }
 
       .head, .content {
@@ -388,13 +365,10 @@ ul.menu {
       }
 
       .head {
-        @include transition(all 0.3s);
         cursor: pointer;
         z-index: 1;
         position: relative;
-        &:hover {
-          background-color: white;
-        }
+        text-align: left;
         h2, h5 {
           margin: 0;
         }
@@ -407,19 +381,26 @@ ul.menu {
         h5 {
           padding: 0 0 0.8rem 0;
           @include media($large-up) {
-              padding: 2.5rem 0;
+              padding: 3.3rem 0 0 0;
           }
+        }
+        h5 + p {
+          margin: 0;
+        }
+        p {
+          opacity: 0;
+          @include transition(opacity 0.5s);
         }
         h2 {
           color: black;
         }
       }
       .content {
-        padding: 3rem 1rem;
+        padding: 0 1rem 3rem 1rem;
         @include media($large-up) {
-          padding: 6rem 1rem 6rem $edge-padding;
+          padding: 0 1rem 6rem $edge-padding;
         }
-        border-bottom: 10px solid $red;
+
         box-sizing: border-box;
 
         h5:first-child {
@@ -442,36 +423,51 @@ ul.menu {
         p {
           text-align: left;
         }
-
-        .left {
-          margin-bottom: 2.5rem;
-          @include media($large-up) {
-            margin-bottom: 0;
-          }
+        p:first-child {
+          margin-top: 0;
         }
+      }
 
+      .left {
+        margin-bottom: 2.5rem;
         @include media($large-up) {
-          .left {
-            @include span-columns(8);
-          }
-          .right {
-            @include span-columns(4);
-          }
+          margin-bottom: 0;
         }
+      }
 
+      @include media($large-up) {
+        .left {
+          @include span-columns(8);
+        }
+        .right {
+          @include span-columns(4);
+        }
+      }
 
+    }
+
+    .white-bg {
+      @include transition(background 0.5s);
+      background: $lightGrey;
+      &:hover {
+        background: white;
       }
     }
 
     li.active {
+      .white-bg {
+        background: transparent;
+      }
       .head {
-        background-color: white;
+        h2, h5, p {
+          color: white;
+        }
+        p {
+          opacity: 1;
+        }
       }
     }
     li {
-      .head {
-        background-color: $lightGrey;
-      }
       .content {
         display: none;
       }
