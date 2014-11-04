@@ -378,7 +378,7 @@ ul.menu {
           .featured-events ul:not(.menu) li .head h2 {
             padding: 2.5rem 0; } }
       .featured-events ul:not(.menu) li .head h5 {
-        padding: 0 0 0.8rem 0; }
+        padding: 0; }
         @media screen and (min-width: 64.063rem) {
           .featured-events ul:not(.menu) li .head h5 {
             padding: 3.3rem 0 0 0; } }
@@ -388,7 +388,8 @@ ul.menu {
         opacity: 0;
         -webkit-transition: opacity 0.5s;
         -moz-transition: opacity 0.5s;
-        transition: opacity 0.5s; }
+        transition: opacity 0.5s;
+        padding-bottom: 1rem; }
       .featured-events ul:not(.menu) li .head h2 {
         color: black; }
     .featured-events ul:not(.menu) li .content {

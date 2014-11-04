@@ -402,7 +402,7 @@ ul.menu {
           }
         }
         h5 {
-          padding: 0 0 0.8rem 0;
+          padding: 0;
           @include media($large-up) {
               padding: 3.3rem 0 0 0;
           }
@@ -413,6 +413,7 @@ ul.menu {
         p {
           opacity: 0;
           @include transition(opacity 0.5s);
+          padding-bottom: 1rem;
         }
         h2 {
           color: black;
