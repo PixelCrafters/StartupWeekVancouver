@@ -477,8 +477,7 @@ ul.menu {
       }
     }
 
-    li:hover,
-    li.active {
+    @mixin see-through-state {
       .white-bg {
         background: transparent;
       }
@@ -490,6 +489,16 @@ ul.menu {
           opacity: 1;
         }
       }
+    }
+
+    @include media($medium-up) {
+        li:hover {
+            @include see-through-state();
+        }
+    }
+
+    li.active {
+      @include see-through-state();
     }
     li {
       .content {

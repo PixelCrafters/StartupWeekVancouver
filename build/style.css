@@ -437,15 +437,17 @@ ul.menu {
       background: #f2f2f2; }
       .featured-events ul:not(.menu) .white-bg:hover {
         background: white; }
-    .featured-events ul:not(.menu) li:hover .white-bg,
+    @media screen and (min-width: 40.063rem) {
+      .featured-events ul:not(.menu) li:hover .white-bg {
+        background: transparent; }
+      .featured-events ul:not(.menu) li:hover .head h2, .featured-events ul:not(.menu) li:hover .head h5, .featured-events ul:not(.menu) li:hover .head p {
+        color: white; }
+      .featured-events ul:not(.menu) li:hover .head p {
+        opacity: 1; } }
     .featured-events ul:not(.menu) li.active .white-bg {
       background: transparent; }
-    .featured-events ul:not(.menu) li:hover .head h2, .featured-events ul:not(.menu) li:hover .head h5, .featured-events ul:not(.menu) li:hover .head p,
-    .featured-events ul:not(.menu) li.active .head h2,
-    .featured-events ul:not(.menu) li.active .head h5,
-    .featured-events ul:not(.menu) li.active .head p {
+    .featured-events ul:not(.menu) li.active .head h2, .featured-events ul:not(.menu) li.active .head h5, .featured-events ul:not(.menu) li.active .head p {
       color: white; }
-    .featured-events ul:not(.menu) li:hover .head p,
     .featured-events ul:not(.menu) li.active .head p {
       opacity: 1; }
     .featured-events ul:not(.menu) li .content {
