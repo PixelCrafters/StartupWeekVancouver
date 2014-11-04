@@ -404,11 +404,9 @@ ul.menu {
         text-align: left; }
       .featured-events ul:not(.menu) li .content p:first-child {
         margin-top: 0; }
-    .featured-events ul:not(.menu) li .left {
-      margin-bottom: 2.5rem; }
-      @media screen and (min-width: 64.063rem) {
-        .featured-events ul:not(.menu) li .left {
-          margin-bottom: 0; } }
+    @media screen and (min-width: 64.063rem) {
+      .featured-events ul:not(.menu) li .left {
+        margin-bottom: 0; } }
     @media screen and (min-width: 64.063rem) {
       .featured-events ul:not(.menu) li .left {
         float: left;

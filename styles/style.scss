@@ -445,7 +445,6 @@ ul.menu {
       }
 
       .left {
-        margin-bottom: 2.5rem;
         @include media($large-up) {
           margin-bottom: 0;
         }
