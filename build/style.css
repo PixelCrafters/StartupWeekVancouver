@@ -39,12 +39,15 @@ h2 {
 
 h3 {
   font-family: "wc_mano_negra_btaregular";
-  font-size: 40px;
+  font-size: 36px;
   color: #58585b;
   text-transform: uppercase;
   text-align: center;
-  line-height: 48px;
   letter-spacing: 0; }
+  @media screen and (min-width: 64.063rem) {
+    h3 {
+      font-size: 40px;
+      line-height: 48px; } }
 
 h4 {
   font-family: "franklin-gothic-ext-comp-urw";
@@ -614,18 +617,27 @@ ul.menu {
     font-size: 41px;
     letter-spacing: 0.14em;
     color: black;
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
     display: inline-block;
-    width: 225px;
+    width: 360px;
     background: white;
     height: 100px;
-    line-height: 100px !important; }
+    line-height: 100px !important;
+    margin-left: -180px;
+    position: absolute;
+    left: 50%; }
     @media screen and (min-width: 64.063rem) {
       .contact a {
         font-size: 48px;
         line-height: 57.6px;
         letter-spacing: 0.14em; } }
+    .contact a:nth-of-type(1) {
+      top: 100px; }
+    .contact a:nth-of-type(2) {
+      top: 200px; }
+    .contact a:nth-of-type(3) {
+      top: 300px; }
     @media screen and (min-width: 64.063rem) {
       .contact a {
         color: #58585b;
@@ -633,21 +645,16 @@ ul.menu {
         -moz-transition: color 0.5s;
         transition: color 0.5s;
         display: block;
-        position: absolute;
-        left: 50%;
         padding: 0 0.2em;
         width: auto; }
         .contact a:hover {
           color: black; }
         .contact a:nth-of-type(1) {
-          margin-left: -228px;
-          top: 100px; }
+          margin-left: -228px; }
         .contact a:nth-of-type(2) {
-          margin-left: 122px;
-          top: 200px; }
+          margin-left: 122px; }
         .contact a:nth-of-type(3) {
           margin-left: -361px;
-          top: 300px;
           padding: 0; } }
 
 .why {
