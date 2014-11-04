@@ -110,6 +110,35 @@ $iceCreamLightBlue: #bedadb;
 $iceCreamLightGreen: #c2e2a1;
 $iceCreamTeal: #6dc9c8;
 
+/*
+#e1cdd4
+#fdac63 x
+#ffc19f
+#ff9684 x
+#ca6a83
+#cc97be x
+#bbdadc
+#bfe6a6 x
+#69ccca
+#9bdab7 x
+#dfea53
+#e87160 x;
+*/
+$animationColours:
+  #bbdadc
+  #fdac63
+  #69ccca
+  #ff9684
+  #dfea53
+  #cc97be
+  #e1cdd4
+  #bfe6a6
+  #ffc19f
+  #9bdab7
+  #ca6a83
+  #e87160;
+
+
 $iceCreams: #d093bf #e2cfd5 #ffad67 #ffc09d #ff928e #c66a81 #bedadb #c2e2a1 #6dc9c8;
 $eventImages: "event-images_swe.jpg"
               "event-images_devops.jpg"
@@ -264,6 +293,14 @@ a.circle {
   }
 }
 
+@include keyframes(icecreamAnimation) {
+  @for $i from 1 through length($animationColours) {
+    #{ ($i * 100) / length($animationColours) }% {
+      color: nth($animationColours, $i);
+    }
+  }
+}
+
 ul.menu {
   list-style: none;
   font-size: 32px;
@@ -296,6 +333,16 @@ ul.menu {
   }
 
   li {
+    > i.icon-SWV_ice-cream {
+      position: absolute;
+      display: block;
+      width: 80px;
+      font-size: 7.25rem;
+      top: -3px;
+      &:hover {
+        @include animation(icecreamAnimation 1s step-end infinite);
+      }
+    }
     > i {
       font-size: 5rem;
       color: $grey;
@@ -648,6 +695,17 @@ ul.menu {
         @include shift(2);
         @include span-columns(8);
       }
+    }
+  }
+  .weareyvr {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    color: #ccc;
+    img {
+      vertical-align: middle;
+      position: relative;
+      top: 1px;
     }
   }
 }

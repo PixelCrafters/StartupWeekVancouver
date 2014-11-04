@@ -16,6 +16,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-SWV_ice-cream:before {
+  content: "\e60a"; }
+
 .icon-mail:before {
   content: "\e600"; }
 

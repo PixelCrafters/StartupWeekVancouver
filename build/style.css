@@ -12,6 +12,20 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+/*
+#e1cdd4
+#fdac63 x
+#ffc19f
+#ff9684 x
+#ca6a83
+#cc97be x
+#bbdadc
+#bfe6a6 x
+#69ccca
+#9bdab7 x
+#dfea53
+#e87160 x;
+*/
 h1 {
   color: #9bdab7;
   text-transform: uppercase;
@@ -199,6 +213,81 @@ a.circle {
         .header > div .button-row {
           padding-bottom: 10rem; } }
 
+@-webkit-keyframes icecreamAnimation {
+  8.33333% {
+    color: #bbdadc; }
+  16.66667% {
+    color: #fdac63; }
+  25% {
+    color: #69ccca; }
+  33.33333% {
+    color: #ff9684; }
+  41.66667% {
+    color: #dfea53; }
+  50% {
+    color: #cc97be; }
+  58.33333% {
+    color: #e1cdd4; }
+  66.66667% {
+    color: #bfe6a6; }
+  75% {
+    color: #ffc19f; }
+  83.33333% {
+    color: #9bdab7; }
+  91.66667% {
+    color: #ca6a83; }
+  100% {
+    color: #e87160; } }
+@-moz-keyframes icecreamAnimation {
+  8.33333% {
+    color: #bbdadc; }
+  16.66667% {
+    color: #fdac63; }
+  25% {
+    color: #69ccca; }
+  33.33333% {
+    color: #ff9684; }
+  41.66667% {
+    color: #dfea53; }
+  50% {
+    color: #cc97be; }
+  58.33333% {
+    color: #e1cdd4; }
+  66.66667% {
+    color: #bfe6a6; }
+  75% {
+    color: #ffc19f; }
+  83.33333% {
+    color: #9bdab7; }
+  91.66667% {
+    color: #ca6a83; }
+  100% {
+    color: #e87160; } }
+@keyframes icecreamAnimation {
+  8.33333% {
+    color: #bbdadc; }
+  16.66667% {
+    color: #fdac63; }
+  25% {
+    color: #69ccca; }
+  33.33333% {
+    color: #ff9684; }
+  41.66667% {
+    color: #dfea53; }
+  50% {
+    color: #cc97be; }
+  58.33333% {
+    color: #e1cdd4; }
+  66.66667% {
+    color: #bfe6a6; }
+  75% {
+    color: #ffc19f; }
+  83.33333% {
+    color: #9bdab7; }
+  91.66667% {
+    color: #ca6a83; }
+  100% {
+    color: #e87160; } }
 ul.menu {
   list-style: none;
   font-size: 32px;
@@ -223,6 +312,16 @@ ul.menu {
         left: 0; } }
   ul.menu li:not(:first-child) {
     margin: 2rem 0; }
+  ul.menu li > i.icon-SWV_ice-cream {
+    position: absolute;
+    display: block;
+    width: 80px;
+    font-size: 7.25rem;
+    top: -3px; }
+    ul.menu li > i.icon-SWV_ice-cream:hover {
+      -webkit-animation: icecreamAnimation 1s step-end infinite;
+      -moz-animation: icecreamAnimation 1s step-end infinite;
+      animation: icecreamAnimation 1s step-end infinite; }
   ul.menu li > i {
     font-size: 5rem;
     color: #cccccc; }
@@ -592,6 +691,15 @@ ul.menu {
         width: 65.88078%; }
         .startup-jobs .row p:last-child {
           margin-right: 0; } }
+  .startup-jobs .weareyvr {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    color: #ccc; }
+    .startup-jobs .weareyvr img {
+      vertical-align: middle;
+      position: relative;
+      top: 1px; }
 
 .feed-me {
   padding: 0;
