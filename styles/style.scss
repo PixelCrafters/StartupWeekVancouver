@@ -13,6 +13,7 @@ $mano: 'wc_mano_negra_btaregular';
   font-family: $mano;
   letter-spacing: 0;
 
+  line-height: 63px;
   font-size: 63px;
 
   @include media($large-up) {
@@ -210,6 +211,7 @@ a.circle {
       @include transform(rotate(-3deg));
       margin: 0;
       padding-top: 2rem;
+      padding-bottom: 2rem;
       @include media($medium-only) {
           padding-top: 8rem;
       }
