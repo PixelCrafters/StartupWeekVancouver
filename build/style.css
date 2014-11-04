@@ -555,7 +555,7 @@ ul.menu {
     background-position: center;
     color: white;
     margin: 0;
-    padding: 2rem; }
+    padding: 2rem 0; }
   .startup-jobs p {
     color: white; }
   .startup-jobs p + p {
