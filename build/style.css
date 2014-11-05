@@ -772,8 +772,7 @@ ul.menu {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    color: white; }
+    text-align: center; }
     .why .row:after {
       content: "";
       display: table;
@@ -815,6 +814,22 @@ ul.menu {
     .why .row small {
       font-size: 14px;
       color: #f2f2f2; }
+    .why .row, .why .row a {
+      color: white; }
+    .why .row .left, .why .row .right {
+      width: 50%; }
+    .why .row .left {
+      float: left;
+      text-align: left; }
+      .why .row .left small {
+        position: relative;
+        left: 11px; }
+    .why .row .right {
+      float: right;
+      text-align: right; }
+      .why .row .right small {
+        position: relative;
+        right: 11px; }
 
 section {
   padding: 2rem 0 0 0; }

@@ -834,8 +834,31 @@ ul.menu {
       font-size: 14px;
       color: #f2f2f2;
     }
-    color: white;
+    &, a {
+      color: white;
+    }
+    .left, .right {
+      width: 50%;
+    }
+    .left {
+      float: left;
+      text-align: left;
+      small {
+        position: relative;
+        left: 11px;
+      }
+    }
+    .right {
+      float: right;
+      text-align: right;
+      small {
+        position: relative;
+        right: 11px;
+      }
+    }
   }
+
+
 }
 
 
