@@ -565,7 +565,10 @@ ul.menu {
   padding: 2rem 1rem;
 
   .row {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    @include media($large-up) {
+        padding-top: 2rem;
+    }
   }
 
   @include media($small-only) {
@@ -613,7 +616,11 @@ ul.menu {
     // @include media($large-up) {
     //   display: block;
     // }
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    @include media($large-up) {
+        margin-bottom: 3rem;
+    }
+
     width: 100%;
     border-left: 1px solid $grey;
     border-right: 1px solid $grey;

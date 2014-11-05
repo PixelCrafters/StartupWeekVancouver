@@ -566,7 +566,10 @@ ul.menu {
   .sponsors > a {
     color: #ff9684; }
   .sponsors .row {
-    padding-top: 2rem; }
+    padding-top: 1.5rem; }
+    @media screen and (min-width: 64.063rem) {
+      .sponsors .row {
+        padding-top: 2rem; } }
   @media screen and (max-width: 40rem) {
     .sponsors .right {
       text-align: center; }
@@ -600,11 +603,14 @@ ul.menu {
           clear: both; } }
   .sponsors .line {
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
     height: 9px; }
+    @media screen and (min-width: 64.063rem) {
+      .sponsors .line {
+        margin-bottom: 3rem; } }
     .sponsors .line span {
       position: relative;
       background: white;
