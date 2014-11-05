@@ -783,7 +783,7 @@ ul.menu {
 
 }
 .why {
-  padding: 4rem 1rem 4rem 1rem;
+  padding: 4rem 1rem 2rem 1rem;
   @include media($medium-only) {
     padding: 8rem 1rem 4rem 1rem;
   }
@@ -820,6 +820,7 @@ ul.menu {
     p {
       font-size: 22px;
       text-align: left;
+      color: white;
 
       padding: 0rem 0 4rem 0;
       @include media($medium-up) {
@@ -827,36 +828,47 @@ ul.menu {
       }
 
     }
-    i {
-      font-size: 52px;
-    }
-    small {
-      font-size: 14px;
-      color: #f2f2f2;
-    }
-    &, a {
-      color: white;
-    }
-    .left, .right {
-      width: 50%;
-    }
-    .left {
-      float: left;
-      text-align: left;
-      small {
-        position: relative;
-        left: 11px;
-      }
-    }
-    .right {
-      float: right;
-      text-align: right;
-      small {
-        position: relative;
-        right: 11px;
-      }
-    }
+
   }
+
+  .footer {
+    @include row();
+    @include outer-container();
+    .container {
+      @include span-columns(12);
+      i {
+        font-size: 52px;
+      }
+      small {
+        font-size: 14px;
+        color: #f2f2f2;
+      }
+      &, a {
+        color: white;
+      }
+      .left {
+        width: 40%;
+        margin-right: 0;
+        float: left;
+        text-align: left;
+        small {
+          position: relative;
+          left: 11px;
+        }
+      }
+      .right {
+        width: 32%;
+        float: right;
+        text-align: right;
+        small {
+          position: relative;
+          right: 11px;
+        }
+      }
+    }
+
+  }
+
 
 
 }

@@ -757,7 +757,7 @@ ul.menu {
           padding: 0; } }
 
 .why {
-  padding: 4rem 1rem 4rem 1rem;
+  padding: 4rem 1rem 2rem 1rem;
   background-image: url("../images/SWV_skyrocket_girl.jpg");
   background-size: cover;
   background-position: center; }
@@ -805,31 +805,53 @@ ul.menu {
     .why .row p {
       font-size: 22px;
       text-align: left;
+      color: white;
       padding: 0rem 0 4rem 0; }
       @media screen and (min-width: 40.063rem) {
         .why .row p {
           padding: 2rem 0 8rem 0; } }
-    .why .row i {
-      font-size: 52px; }
-    .why .row small {
-      font-size: 14px;
-      color: #f2f2f2; }
-    .why .row, .why .row a {
-      color: white; }
-    .why .row .left, .why .row .right {
-      width: 50%; }
-    .why .row .left {
+  .why .footer {
+    display: block;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .why .footer:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .why .footer:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .why .footer .container {
       float: left;
-      text-align: left; }
-      .why .row .left small {
-        position: relative;
-        left: 11px; }
-    .why .row .right {
-      float: right;
-      text-align: right; }
-      .why .row .right small {
-        position: relative;
-        right: 11px; }
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .why .footer .container:last-child {
+        margin-right: 0; }
+      .why .footer .container i {
+        font-size: 52px; }
+      .why .footer .container small {
+        font-size: 14px;
+        color: #f2f2f2; }
+      .why .footer .container, .why .footer .container a {
+        color: white; }
+      .why .footer .container .left {
+        width: 40%;
+        margin-right: 0;
+        float: left;
+        text-align: left; }
+        .why .footer .container .left small {
+          position: relative;
+          left: 11px; }
+      .why .footer .container .right {
+        width: 32%;
+        float: right;
+        text-align: right; }
+        .why .footer .container .right small {
+          position: relative;
+          right: 11px; }
 
 section {
   padding: 2rem 0 0 0; }
