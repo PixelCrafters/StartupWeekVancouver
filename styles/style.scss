@@ -638,21 +638,25 @@ ul.menu {
   }
 
   .line {
-    display: none;
-    @include media($large-up) {
-      display: block;
-    }
-
+    display: block;
+    // @include media($large-up) {
+    //   display: block;
+    // }
+    margin-bottom: 3rem;
     width: 100%;
     border-left: 1px solid $grey;
     border-right: 1px solid $grey;
     height: 9px;
     span {
       position: relative;
-      top: -7px;
       background: white;
-      padding: 0 0.5rem;
-      font-size: 12px;
+      padding: 0 0.9rem;
+      top: -7px;
+      font-size: 16px;
+      @include media($large-up) {
+          top: -13px;
+          font-size: 22px;
+      }
     }
     &:before {
       content: " ";

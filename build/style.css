@@ -626,20 +626,22 @@ ul.menu {
             .sponsors .row .right a img.large {
               max-width: 39%; } }
   .sponsors .line {
-    display: none;
+    display: block;
+    margin-bottom: 3rem;
     width: 100%;
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
     height: 9px; }
-    @media screen and (min-width: 64.063rem) {
-      .sponsors .line {
-        display: block; } }
     .sponsors .line span {
       position: relative;
-      top: -7px;
       background: white;
-      padding: 0 0.5rem;
-      font-size: 12px; }
+      padding: 0 0.9rem;
+      top: -7px;
+      font-size: 16px; }
+      @media screen and (min-width: 64.063rem) {
+        .sponsors .line span {
+          top: -13px;
+          font-size: 22px; } }
     .sponsors .line:before {
       content: " ";
       border-bottom: 1px solid #cccccc;
