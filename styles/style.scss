@@ -558,13 +558,7 @@ ul.menu {
 .sponsors {
 
   img {
-    max-width: 80%;
-    &.small {
-      max-width: 60%;
-    }
-    &.large {
-      max-width: 100%;
-    }
+    width: 100%;
   }
 
   @include stroke-link-header();
@@ -611,29 +605,6 @@ ul.menu {
     .row {
       @include outer-container();
       @include row();
-      .left {
-        @include span-columns(2);
-        img {
-          width: 100%;
-        }
-      }
-      .right {
-        text-align: center;
-        @include span-columns(10);
-        a {
-          img {
-            //width: 300px;
-            max-width: 33%;
-
-            &.small {
-              max-width: 22%;
-            }
-            &.large {
-              max-width: 39%;
-            }
-          }
-        }
-      }
     }
   }
 
@@ -651,8 +622,8 @@ ul.menu {
       position: relative;
       background: white;
       padding: 0 0.9rem;
-      top: -7px;
-      font-size: 16px;
+      top: -8px;
+      font-size: 12px;
       @include media($large-up) {
           top: -13px;
           font-size: 22px;

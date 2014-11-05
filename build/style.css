@@ -556,11 +556,7 @@ ul.menu {
   text-align: center;
   padding: 2rem 1rem; }
   .sponsors img {
-    max-width: 80%; }
-    .sponsors img.small {
-      max-width: 60%; }
-    .sponsors img.large {
-      max-width: 100%; }
+    width: 100%; }
   .sponsors > h3 {
     background-image: url("../images/stroke.png");
     background-size: 186px 46px;
@@ -601,30 +597,7 @@ ul.menu {
         .sponsors .row:after {
           content: "";
           display: table;
-          clear: both; }
-        .sponsors .row .left {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 14.70196%; }
-          .sponsors .row .left:last-child {
-            margin-right: 0; }
-          .sponsors .row .left img {
-            width: 100%; }
-        .sponsors .row .right {
-          text-align: center;
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 82.94039%; }
-          .sponsors .row .right:last-child {
-            margin-right: 0; }
-          .sponsors .row .right a img {
-            max-width: 33%; }
-            .sponsors .row .right a img.small {
-              max-width: 22%; }
-            .sponsors .row .right a img.large {
-              max-width: 39%; } }
+          clear: both; } }
   .sponsors .line {
     display: block;
     margin-bottom: 3rem;
@@ -636,8 +609,8 @@ ul.menu {
       position: relative;
       background: white;
       padding: 0 0.9rem;
-      top: -7px;
-      font-size: 16px; }
+      top: -8px;
+      font-size: 12px; }
       @media screen and (min-width: 64.063rem) {
         .sponsors .line span {
           top: -13px;
